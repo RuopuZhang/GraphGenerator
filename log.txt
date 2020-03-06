@@ -1,0 +1,31 @@
+2020.1.18
+finished user_input_config.py which will execute other files, the file has three varibles: number of pages, file input location, file output location
+
+tested veh detail page, veh speed page, veh conflict summary page, ok
+
+csvfile for cyc conflict and veh conflict has different headers, need to work on this
+
+
+task list: 
+veh speed dist page - done
+
+veh conflicts - done
+cyc conflicts
+ped conflicts
+
+veh speed profiles by intersection approach - done
+
+veh detail page -done
+cyc detail page
+ped detail page
+
+
+2020.1.21
+
+finished task list above, merged image to latex to generate the detail page.
+
+Latex file task:
+veh speed dist page
+conflicts page
+veh speed profiles by intersection approact
+
