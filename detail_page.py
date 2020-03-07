@@ -17,6 +17,7 @@ def Veh_detail_page(v1,v2,v3,v5,v6,v7):
                 if pd.isnull(df_fig1.loc[1, 'b']) is True:
                         continue              
                 #fig 1, bar graph
+                print(v1[i])
                 fig1 = go.Figure(data = [
                 	go.Bar(x = df_fig1['a'], y = df_fig1['e'],marker_color='green', marker_line_color='black', marker_line_width=1, opacity=1),
                 	go.Bar(x = df_fig1['a'], y = df_fig1['d'], marker_color='yellow', marker_line_color='black', marker_line_width=1, opacity=1),

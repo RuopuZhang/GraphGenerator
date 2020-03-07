@@ -15,17 +15,23 @@ from fnmatch import fnmatch
 
 
 ####csv folder lcoation####
-csv_folder_location = '/home/rico/Desktop/Rico test'
+csv_folder_location = '/home/rico/Desktop/Rico test/'
 
 ####image folder location
-image_folder_location = '/home/rico/Desktop/Rico test/images'
+image_folder_location = '/home/rico/Desktop/image-test'
 
 
 ##subfolders###
-cyc_conflict_data = '/home/rico/Desktop/Rico test/CYC CONFLICT DATA'
-ped_conflict_data = '/home/rico/Desktop/Rico test/PED CONFLICT DATA'
-veh_conflict_data = '/home/rico/Desktop/Rico test/VEH CONFLICT DATA'
-speed_profile_data = '/home/rico/Desktop/Rico test/SPEED PROFILE DATA'
+for entry in os.listdir(csv_folder_location):
+    if os.path.isdir(os.path.join(csv_folder_location, entry)):
+    	if 'CYC' in entry:
+    		cyc_conflict_data = csv_folder_location+entry
+    	if 'VEH' in entry:
+    		veh_conflict_data = csv_folder_location+entry
+    	if 'PED' in entry:
+    		ped_conflict_data = csv_folder_location+entry
+    	if 'SPEED' in entry:
+    		speed_profile_data = csv_folder_location+entry
 
 
 
@@ -171,16 +177,16 @@ def speed_profile_page(speed_profile_data,image_folder_location):
 
 #execute
 detail_page(veh_conflict_data,image_folder_location, 'veh')
-detail_page(cyc_conflict_data,image_folder_location, 'cyc')
-detail_page(ped_conflict_data,image_folder_location, 'ped')
+# detail_page(cyc_conflict_data,image_folder_location, 'cyc')
+# detail_page(ped_conflict_data,image_folder_location, 'ped')
 
-conflict_page(veh_conflict_data,image_folder_location,'veh')
-conflict_page(cyc_conflict_data,image_folder_location,'cyc')
-conflict_page(ped_conflict_data,image_folder_location,'ped')
+# conflict_page(veh_conflict_data,image_folder_location,'veh')
+# conflict_page(cyc_conflict_data,image_folder_location,'cyc')
+# conflict_page(ped_conflict_data,image_folder_location,'ped')
 
-speed_dist_page(speed_profile_data, image_folder_location)
+# speed_dist_page(speed_profile_data, image_folder_location)
 
-speed_profile_page(speed_profile_data,image_folder_location)
+# speed_profile_page(speed_profile_data,image_folder_location)
 
 
 

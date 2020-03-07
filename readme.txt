@@ -8,9 +8,8 @@ orca: https://plot.ly/python/static-image-export/
 To run the program:
 python user_input_config.py
 
-Three varibles need to be changed for each report :
+Two varibles need to be changed for each report :
 1. csv folder location (file input)
-2. csv sub folder location(for now)
 2. image file save location (file out put)
 
 
