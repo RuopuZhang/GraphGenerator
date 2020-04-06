@@ -16,7 +16,7 @@ from fnmatch import fnmatch
 
 ####csv folder lcoation####
 csv_folder_location = '/home/rico/Desktop/Rico test/'
-
+tempstr = "sss"
 ####image folder location
 image_folder_location = '/home/rico/Desktop/image-test'
 
