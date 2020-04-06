@@ -20,6 +20,6 @@ In user_input_config.py, threr are 4 main pages, including:
 4. veh/cyc/ped detail page
 
 
-comment out the rest of the code if you want to test specific pagessss
+comment out the rest of the code if you want to test specific pages
 
 
